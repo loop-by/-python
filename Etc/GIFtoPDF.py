@@ -6,7 +6,8 @@ import os
 def makePdf(imageDir):
     os.chdir(imageDir)
 
-# https://www.kite.com/python/answers/how-to-list-all-subdirectories-and-files-in-a-given-directory-in-python
+# Retrieved from: https://www.kite.com/python/answers/how-to-list-all-subdirectories-and-files-in-a-given-directory-in-python
+# modified by: loop-by
     for root, subdirectories, files in os.walk(os.getcwd()):
         for subdirectory in subdirectories:
             # print
@@ -16,7 +17,7 @@ def makePdf(imageDir):
 
             # Orignially Written by: Vaibhav Singh
             # Retrieved from: https://stackoverflow.com/questions/27327513/create-pdf-from-a-list-of-images
-
+            # modified by: loop-by
             for j in os.listdir(os.getcwd()):
                 try:
                     os.chdir(imageDir)

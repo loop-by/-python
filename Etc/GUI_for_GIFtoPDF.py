@@ -3,6 +3,9 @@ from tkinter import filedialog, Text, messagebox
 import os
 from GIFtoPDF import *
 
+# Retrieved from: https://www.youtube.com/watch?v=jE-SpRI3K5g
+# modified by: loop-by
+
 root = tk.Tk()
 apps = []
 
@@ -17,7 +20,6 @@ def addApp():
     for app in apps:
         label = tk.Label(frame, text=app)
         label.pack()
-
 
 def runApps():
     for app in apps:
