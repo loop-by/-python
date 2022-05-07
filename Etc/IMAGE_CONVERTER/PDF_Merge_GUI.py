@@ -4,6 +4,7 @@ import os
 from PDF_Merge import *
 
 root = tk.Tk()
+root.title(string="PDF Merger GUI")
 apps = []
 
 def addApp():
